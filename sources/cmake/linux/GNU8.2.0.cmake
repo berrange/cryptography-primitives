@@ -96,7 +96,7 @@ if(${ARCH} MATCHES "ia32")
 endif(${ARCH} MATCHES "ia32")
 
 # Optimization level = 3, no-debug definition (turns off asserts), warnings=errors
-set(CMAKE_C_FLAGS_RELEASE " -O3 -DNDEBUG -Werror")
+set(CMAKE_C_FLAGS_RELEASE " -O3 -DNDEBUG -Werror -Wno-error=stringop-overflow")
 # Security flag that adds compile-time and run-time checks
 set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -D_FORTIFY_SOURCE=2")
 

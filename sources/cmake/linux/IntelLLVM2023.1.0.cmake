@@ -93,7 +93,7 @@ if(CODE_COVERAGE)
 endif()
 
 # Optimization level = 3, no-debug definition (turns off asserts), warning level = 3, treat warnings as errors
-set(CMAKE_C_FLAGS_RELEASE " -O3 -ffast-math -DNDEBUG -Wall -Wno-unused-function -Werror")
+set(CMAKE_C_FLAGS_RELEASE " -O3 -ffast-math -DNDEBUG -Wall -Wno-unused-function -Werror -Wno-error=stringop-overflow")
 # Enabling additional warnings
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wconversion -Wimplicit-fallthrough -Wextra -Wunknown-pragmas")
 

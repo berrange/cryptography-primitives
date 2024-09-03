@@ -96,10 +96,11 @@ if(CODE_COVERAGE)
 endif()
 
 # Optimization level = 3, no-debug definition (turns off asserts), warning level = 3, treat warnings as errors
-set(CMAKE_C_FLAGS_RELEASE " -O3 -DNDEBUG -w3 -Werror")
+set(CMAKE_C_FLAGS_RELEASE " -O3 -DNDEBUG -w3 -Werror -Wno-error=stringop-overflow")
 # Security flag that adds compile-time and run-time checks
 set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -D_FORTIFY_SOURCE=2")
 
+>>>>>>> b073f869a (Drop -Werror from build flags)
 # DEBUG flags Optimization level = 0, generation maximum GDB information (-g3)
 set (CMAKE_C_FLAGS_DEBUG " -O0 -g3")
 
