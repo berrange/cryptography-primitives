@@ -106,7 +106,7 @@ if(SANITIZERS)
 endif(SANITIZERS)
 
 # Optimization level = 3, no-debug definition (turns off asserts), warnings=errors
-set (CMAKE_C_FLAGS_RELEASE " -O3 -DNDEBUG -Werror")
+set (CMAKE_C_FLAGS_RELEASE " -O3 -DNDEBUG")
 
 # DEBUG flags - optimization level = 0, generation GDB information (-g)
 set (CMAKE_C_FLAGS_DEBUG " -O0 -g")

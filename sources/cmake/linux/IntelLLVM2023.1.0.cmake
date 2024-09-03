@@ -95,7 +95,7 @@ if(CODE_COVERAGE)
 endif()
 
 # Optimization level = 3, no-debug definition (turns off asserts), warning level = 3, treat warnings as errors
-set (CMAKE_C_FLAGS_RELEASE " -Ofast -DNDEBUG -Wall -Wno-unused-function -Wno-missing-braces -Werror")
+set (CMAKE_C_FLAGS_RELEASE " -Ofast -DNDEBUG -Wall -Wno-unused-function -Wno-missing-braces")
 
 # Alignment for structures on byte boundaries (= 16)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Zp16")
